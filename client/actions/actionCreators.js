@@ -1,11 +1,11 @@
-export const incrementLikes = ({ postId }) => {
+export const incrementLikes = (index) => {
   return {
     type: 'INCREMENT_LIKES',
-    postId
+    index
   }
 }
 
-export const addComment = ({ postId, author, comment }) => {
+export const addComment = (postId, author, comment) => {
   return {
     type: 'ADD_COMMENT',
     postId,
@@ -14,7 +14,7 @@ export const addComment = ({ postId, author, comment }) => {
   }
 }
 
-export const removeComment = ({ postId, index }) => {
+export const removeComment = (postId, index) => {
   return {
     type: 'REMOVE_COMMENT',
     postId,
